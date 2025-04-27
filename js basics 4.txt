@@ -1,0 +1,36 @@
+[ ]
+
+javascript
+// Function to calculate the area of a circle// Function declaration
+function calculateCircleArea(radius) {
+// Formula: π * r²
+  return Math.PI * radius * radius;
+}
+
+// Function expression
+const calculateCircleAreaExpr = function(radius) {
+  return Math.PI * radius * radius;
+};
+
+// Arrow function
+const calculateCircleAreaArrow = (radius) => Math.PI * radius * radius;
+
+// Test the functions
+const radius = 5;
+console.log(`Circle with radius ${radius} has area:`);
+console.log(`Function declaration: ${calculateCircleArea(radius).toFixed(2)}`);
+console.log(`Function expression: ${calculateCircleAreaExpr(radius).toFixed(2)}`);
+console.log(`Arrow function: ${calculateCircleAreaArrow(radius).toFixed(2)}`);
+
+// Function with default parameters
+function greet(name = "Guest") {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet());// "Hello, Guest!"
+console.log(greet("John"));// "Hello, John!"// Function with multiple parameters
+function calculateRectangleArea(length, width) {
+  return length * width;
+}
+
+console.log(`Rectangle area: ${calculateRectangleArea(10, 5)}`);
